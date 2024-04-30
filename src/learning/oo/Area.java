@@ -20,20 +20,13 @@ public class Area {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        System.out.printf("Triangle X area: %.4f%n", calcArea(x.a, x.b, x.c));
-        System.out.printf("Triangle Y area: %.4f%n", calcArea(y.a, y.b, y.c));
+        System.out.printf("Triangle X area: %.4f%n", x.area());
+        System.out.printf("Triangle Y area: %.4f%n", y.area());
 
-        if(calcArea(x.a, x.b, x.c) > calcArea(y.a, y.b, y.c)) {
+        if(x.area() > y.area()) {
             System.out.println("Larger area X");
         } else {
             System.out.println("Larger area Y");
         }
-
-    }
-
-    public static double calcArea(double a, double b, double c) {
-        double p = (a + b + c) / 2;
-        double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        return area;
     }
 }
