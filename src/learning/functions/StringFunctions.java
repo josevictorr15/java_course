@@ -4,9 +4,9 @@ public class StringFunctions {
     public static void main(String[] args) {
         String original = "ASADA asdasdbc ASD ASDA asd     ";
         String originalSplit = "potato apple lemon";
+        System.out.println("Original: - " + original + "-");
 
         String lower = original.toLowerCase();  // Transforma as letras em minúsculas
-        System.out.println("Original: - " + original + "-");
         System.out.println("toLowerCase: - " + lower + "-");
 
         String upper = original.toUpperCase();  // Transforma as letras em maiúsculas
@@ -36,5 +36,7 @@ public class StringFunctions {
         System.out.println(split1);
         System.out.println(split2);
         System.out.println(split3);
+
+        System.out.println("Finish code");
     }
 }
